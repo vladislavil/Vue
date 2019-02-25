@@ -9,6 +9,7 @@
 </template>
 
 <script>
+  import {eventEmitter} from './main'
 
 export default {
   //props: ['carName', 'carYear'],
@@ -23,7 +24,6 @@ export default {
     },
     carYear: Number,
     changeFunc: Function,
-    counter: Number
   },
   computed: {
     reverseName() {
@@ -36,7 +36,7 @@ export default {
       this.$emit('nameChanged', this.carName)// уведомляем родителя, о том, чо carName - был изменен внутри дочернего компонента
     },
     updateCounter: function () {
-      this.$emit('counterUpdated', this.counter + 1)
+      eventEmitter.$emit('counterUpdated', 1)
     }
   }
 }
