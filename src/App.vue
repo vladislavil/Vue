@@ -2,7 +2,12 @@
   <!--nameCanged - считываем изменения переменной carName из дочернего компонента-->
   <div id="app">
     <h1>Parent: {{ carName }}</h1>
-    <app-car :carYear="carYear" :carName="carName" @nameChanged = "carName = $event"></app-car>
+    <app-car
+      :carYear="carYear"
+      :carName="carName"
+      @nameChanged = "carName = $event"
+      :changeFunc = "changeNameToAudi"
+    ></app-car>
   </div>
 </template>
 
@@ -19,6 +24,11 @@ export default {
   },
   components: {
     appCar: Car,
+  },
+  methods: {
+    changeNameToAudi: function () {
+      return this.carName = "Audi"
+    }
   }
 }
 </script>
