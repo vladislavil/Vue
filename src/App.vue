@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>Parent: {{ carName }}</h1>
-    <app-car :carName="carName" :carYear="carYear"></app-car>
+    <app-car :carYear="carYear"></app-car>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ import Car from './car'
 export default {
   data () {
     return {
-      carName: 'Ford from parent',
+      carName: 'Ford',
       carYear: 2015
     }
   },
