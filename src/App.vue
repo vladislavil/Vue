@@ -1,29 +1,20 @@
 <template>
   <div id="app">
-
-    <app-car>
-
-      <h1 slot="title"> {{carName}} </h1>
-      <p slot="text">Lorem ipsum dolor sit amet.</p>
-
-    </app-car>
-
+    <h1 v-colored v-if="visible"> {{ title }} </h1>
+    <button @click="visible = !visible">Toggle</button>
+    <button @click="title = 'new title'">Toggle</button>
   </div>
 </template>
 
 <script>
 
-import Car from './car'
-
 export default {
 
   data() {
    return  {
-     carName: "Ford"
+     visible: true,
+     title: "Hello i am Vue"
    }
-  },
-  components: {
-    appCar: Car
   }
 }
 </script>
