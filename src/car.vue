@@ -1,7 +1,9 @@
 <template>
   <div class="car">
-    <h1>Car</h1>
-    <p>Lorem ipsum dolor sit amet.</p>
+    <slot name="title"></slot>
+    <hr>
+    <hr>
+    <slot name="text"></slot>
   </div>
 </template>
 
@@ -16,4 +18,6 @@ export default {
 <style lang="sass" scoped>
   div
     border: 2px solid #000
+    padding-bottom: 10px
+    padding-left: 10px
 </style>
