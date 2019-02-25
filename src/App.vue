@@ -2,9 +2,16 @@
   <!--nameCanged - считываем изменения переменной carName из дочернего компонента-->
   <div id="app">
     <h1>Parent: {{ carName }}</h1>
+
+    <app-counter
+      :counter="counter"
+    ></app-counter>
+
     <app-car
       :carYear="carYear"
       :carName="carName"
+      :counter="counter"
+      @counterUpdated = "counter = $event"
       @nameChanged = "carName = $event"
       :changeFunc = "changeNameToAudi"
     ></app-car>
@@ -14,21 +21,24 @@
 <script>
 
 import Car from './car'
+import Counter from './counter'
 
 export default {
   data () {
     return {
       carName: 'Ford',
-      carYear: 2015
+      carYear: 2015,
+      counter: 0
     }
   },
   components: {
     appCar: Car,
+    appCounter: Counter
   },
   methods: {
     changeNameToAudi: function () {
       return this.carName = "Audi"
-    }
+    },
   }
 }
 </script>

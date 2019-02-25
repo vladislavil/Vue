@@ -4,6 +4,7 @@
     <p> Car Year: {{ carYear}}</p>
     <button @click="changeName">Change Name</button>
     <button @click="changeFunc()">Change from Parent</button>
+    <button @click="updateCounter">Update counter</button>
   </div>
 </template>
 
@@ -21,7 +22,8 @@ export default {
       default: "default CarName"
     },
     carYear: Number,
-    changeFunc: Function
+    changeFunc: Function,
+    counter: Number
   },
   computed: {
     reverseName() {
@@ -32,6 +34,9 @@ export default {
     changeName: function () {
       this.carName = "Mazda"
       this.$emit('nameChanged', this.carName)// уведомляем родителя, о том, чо carName - был изменен внутри дочернего компонента
+    },
+    updateCounter: function () {
+      this.$emit('counterUpdated', this.counter + 1)
     }
   }
 }
