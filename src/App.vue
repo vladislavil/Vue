@@ -1,7 +1,8 @@
 <template>
+  <!--nameCanged - считываем изменения переменной carName из дочернего компонента-->
   <div id="app">
     <h1>Parent: {{ carName }}</h1>
-    <app-car :carYear="carYear"></app-car>
+    <app-car :carYear="carYear" :carName="carName" @nameChanged = "carName = $event"></app-car>
   </div>
 </template>
 

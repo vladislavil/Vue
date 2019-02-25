@@ -2,6 +2,7 @@
   <div class="car">
     <h3> Car Name: {{ carName }} \ {{ reverseName }}</h3>
     <p> Car Year: {{ carYear}}</p>
+    <button @click="changeName">Change Name</button>
   </div>
 </template>
 
@@ -23,6 +24,12 @@ export default {
   computed: {
     reverseName() {
       return this.carName.split('').reverse().join('');
+    }
+  },
+  methods: {
+    changeName: function () {
+      this.carName = "Mazda"
+      this.$emit('nameChanged', this.carName)// уведомляем родителя, о том, чо carName - был изменен внутри дочернего компонента
     }
   }
 }
