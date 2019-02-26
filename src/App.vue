@@ -1,24 +1,40 @@
 <template>
   <div id="app">
-    <h1 v-colored v-if="visible"> {{ title }} </h1>
-    <button @click="visible = !visible">Toggle</button>
-    <button @click="title = 'new title'">Toggle</button>
+    <parallax :speed-factor="0.5">
+      <img src="./copyboock.png" alt="">
+    </parallax>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aspernatur at dolore doloribus dolorum, eius enim eum ipsum modi nesciunt possimus quibusdam sed similique unde vel veritatis voluptates voluptatibus? Aspernatur consequuntur fugit iure molestiae provident. Amet commodi, earum, est incidunt iusto maxime nemo non placeat provident rem rerum totam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aspernatur at dolore doloribus dolorum, eius enim eum ipsum modi nesciunt possimus quibusdam sed similique unde vel veritatis voluptates voluptatibus? Aspernatur consequuntur fugit iure molestiae provident. Amet commodi, earum, est incidunt iusto maxime nemo non placeat provident rem rerum totam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aspernatur at dolore doloribus dolorum, eius enim eum ipsum modi nesciunt possimus quibusdam sed similique unde vel veritatis voluptates voluptatibus? Aspernatur consequuntur fugit iure molestiae provident. Amet commodi, earum, est incidunt iusto maxime nemo non placeat provident rem rerum totam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aspernatur at dolore doloribus dolorum, eius enim eum ipsum modi nesciunt possimus quibusdam sed similique unde vel veritatis voluptates voluptatibus? Aspernatur consequuntur fugit iure molestiae provident. Amet commodi, earum, est incidunt iusto maxime nemo non placeat provident rem rerum totam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aspernatur at dolore doloribus dolorum, eius enim eum ipsum modi nesciunt possimus quibusdam sed similique unde vel veritatis voluptates voluptatibus? Aspernatur consequuntur fugit iure molestiae provident. Amet commodi, earum, est incidunt iusto maxime nemo non placeat provident rem rerum totam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aspernatur at dolore doloribus dolorum, eius enim eum ipsum modi nesciunt possimus quibusdam sed similique unde vel veritatis voluptates voluptatibus? Aspernatur consequuntur fugit iure molestiae provident. Amet commodi, earum, est incidunt iusto maxime nemo non placeat provident rem rerum totam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aspernatur at dolore doloribus dolorum, eius enim eum ipsum modi nesciunt possimus quibusdam sed similique unde vel veritatis voluptates voluptatibus? Aspernatur consequuntur fugit iure molestiae provident. Amet commodi, earum, est incidunt iusto maxime nemo non placeat provident rem rerum totam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aspernatur at dolore doloribus dolorum, eius enim eum ipsum modi nesciunt possimus quibusdam sed similique unde vel veritatis voluptates voluptatibus? Aspernatur consequuntur fugit iure molestiae provident. Amet commodi, earum, est incidunt iusto maxime nemo non placeat provident rem rerum totam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aspernatur at dolore doloribus dolorum, eius enim eum ipsum modi nesciunt possimus quibusdam sed similique unde vel veritatis voluptates voluptatibus? Aspernatur consequuntur fugit iure molestiae provident. Amet commodi, earum, est incidunt iusto maxime nemo non placeat provident rem rerum totam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aspernatur at dolore doloribus dolorum, eius enim eum ipsum modi nesciunt possimus quibusdam sed similique unde vel veritatis voluptates voluptatibus? Aspernatur consequuntur fugit iure molestiae provident. Amet commodi, earum, est incidunt iusto maxime nemo non placeat provident rem rerum totam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aspernatur at dolore doloribus dolorum, eius enim eum ipsum modi nesciunt possimus quibusdam sed similique unde vel veritatis voluptates voluptatibus? Aspernatur consequuntur fugit iure molestiae provident. Amet commodi, earum, est incidunt iusto maxime nemo non placeat provident rem rerum totam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aspernatur at dolore doloribus dolorum, eius enim eum ipsum modi nesciunt possimus quibusdam sed similique unde vel veritatis voluptates voluptatibus? Aspernatur consequuntur fugit iure molestiae provident. Amet commodi, earum, est incidunt iusto maxime nemo non placeat provident rem rerum totam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aspernatur at dolore doloribus dolorum, eius enim eum ipsum modi nesciunt possimus quibusdam sed similique unde vel veritatis voluptates voluptatibus? Aspernatur consequuntur fugit iure molestiae provident. Amet commodi, earum, est incidunt iusto maxime nemo non placeat provident rem rerum totam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aspernatur at dolore doloribus dolorum, eius enim eum ipsum modi nesciunt possimus quibusdam sed similique unde vel veritatis voluptates voluptatibus? Aspernatur consequuntur fugit iure molestiae provident. Amet commodi, earum, est incidunt iusto maxime nemo non placeat provident rem rerum totam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aspernatur at dolore doloribus dolorum, eius enim eum ipsum modi nesciunt possimus quibusdam sed similique unde vel veritatis voluptates voluptatibus? Aspernatur consequuntur fugit iure molestiae provident. Amet commodi, earum, est incidunt iusto maxime nemo non placeat provident rem rerum totam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aspernatur at dolore doloribus dolorum, eius enim eum ipsum modi nesciunt possimus quibusdam sed similique unde vel veritatis voluptates voluptatibus? Aspernatur consequuntur fugit iure molestiae provident. Amet commodi, earum, est incidunt iusto maxime nemo non placeat provident rem rerum totam.</p>
   </div>
 </template>
 
 <script>
 
-export default {
+import Parallax from "vue-parallaxy/dist/vue-parallaxy.min.js"
 
-  data() {
-   return  {
-     visible: true,
-     title: "Hello i am Vue"
-   }
+export default {
+  components: {
+    Parallax
   }
 }
+
 </script>
 
 <style lang="sass">
+
 
 </style>
