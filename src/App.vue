@@ -1,20 +1,17 @@
 <template>
   <div id="app">
-    <h1>{{ msg }}</h1>
+    <banner></banner>
   </div>
 </template>
 
 <script>
+
+import Banner from './Banner/Banner'
+
 export default {
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+  components: {
+    Banner
   }
 }
 </script>
 
-<style lang="sass">
-  h1
-    color: red
-</style>
