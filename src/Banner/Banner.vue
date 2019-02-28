@@ -4,7 +4,7 @@
       <agile :autoplay="true" :dots="true" :arrows="false" :pauseOnHover="false" :fade="true" :speed="700">
         <div class="slide" v-for="(item, key) in items">
           <parallax :speed-factor="0.4">
-            <img :src="item.image" :alt="image">
+            <img :src="item.image" :alt="item.image">
           </parallax>
           <div class="banner__data" >
             <h1 class="banner__title">{{item.title}}</h1>
